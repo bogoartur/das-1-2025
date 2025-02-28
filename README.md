@@ -18,3 +18,5 @@
 - Uso de uma unica tecnologia padrao
 - Compilado, testado, unico pacote
 - Deploy como unico sistema
+- Executado como um unico processo no SO
+- Unico Banco de dados
