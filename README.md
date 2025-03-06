@@ -20,3 +20,31 @@
 - Deploy como unico sistema
 - Executado como um unico processo no SO
 - Unico Banco de dados
+
+
+## Aula 05/03/25
+
+- Pipes e filtros, big ball of mud, Arquitetura Orientada a Mensagens, Arquitetura Publish/Subscribe
+- Padrões vs estilos arquiteturais
+- Padrão arquitetural = solução para um problema específico
+ - MVC - separa as responsabilidades (Model = dados, View = tela, Control = comportamento)
+- Estilo arquitetural
+
+- Monolitos podem ser bons, e.g. Linux e outros kernels
+
+- Diferenças C (não-oo), C++ (OOP), Rust na modernização dos SOs, melhor gerenciamento de memória nativo
+
+- Arquitetura em Camadas
+ - Manutenção
+ - Divisão de responsabilidades
+ - Performance
+ - Segurança
+ - Camada de visualização 
+  - Requisitos próprios
+ - Camada de lógica de negócio
+  - Backend
+ - Camada de persistência
+  - Banco de dados relacional já está consolidado
+  - Conecta todos os clientes
+  
+
