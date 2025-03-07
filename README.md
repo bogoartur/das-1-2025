@@ -35,23 +35,23 @@
 - Diferenças C (não-oo), C++ (OOP), Rust na modernização dos SOs, melhor gerenciamento de memória nativo
 
 - Arquitetura em Camadas
- - Manutenção
- - Divisão de responsabilidades
- - Performance
- - Segurança
+  - Manutenção
+  - Divisão de responsabilidades
+  - Performance
+  - Segurança
  - Camada de visualização 
-  - Requisitos próprios
+   - Requisitos próprios
  - Camada de lógica de negócio
-  - Backend
+   - Backend
  - Camada de persistência
-  - Banco de dados relacional já está consolidado
-  - Conecta todos os clientes
+   - Banco de dados relacional já está consolidado
+   - Conecta todos os clientes
   
 ## Aula 06/03/25
 - [Who Needs an Architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 - O que é arquitetura?
-  -- É o conjunto de partes mais importantes de um projeto no entendimento interno dele, dos desenvolvedores.
+   - É o conjunto de partes mais importantes de um projeto no entendimento interno dele, dos desenvolvedores.
 - Qual o comportamento do arquiteto da "Matrix"?
-  -- Ele faz todas as decisões importantes sobre como o projeto será feito, as tecnologias que serão utilizadas e a estrutura dele para garantir a integridade conceitual do projeto, garantir que tudo faça sentido junto.
+   - Ele faz todas as decisões importantes sobre como o projeto será feito, as tecnologias que serão utilizadas e a estrutura dele para garantir a integridade conceitual do projeto, garantir que tudo faça sentido junto.
 - Qual o comportamento do arquiteto ideal?
-  -- Ele trabalha juntamente com a equipe para entender as entranhas do projeto e orientá-los da melhor maneira, participando da programação, entrando em uma reunião com o time de requisitos, para ter certeza que tudo vai ficar nos trilhos
+   - Ele trabalha juntamente com a equipe para entender as entranhas do projeto e orientá-los da melhor maneira, participando da programação, entrando em uma reunião com o time de requisitos, para ter certeza que tudo vai ficar nos trilhos
