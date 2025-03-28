@@ -16,7 +16,10 @@ public class Publisher {
                 .fullyQualifiedNamespace("sb-das12025-test-brazilsouth.servicebus.windows.net").credential(credential)
                 .transportType(AmqpTransportType.AMQP_WEB_SOCKETS).sender().topicName(topicName).buildClient();
 
-        senderClient.sendMessage(new ServiceBusMessage("Olá do arturzinho"));
-        System.out.println("Enviado");
+        while (true) {
+            senderClient.sendMessage(new ServiceBusMessage("eita porra"));
+        }
+
+
     }
 }
