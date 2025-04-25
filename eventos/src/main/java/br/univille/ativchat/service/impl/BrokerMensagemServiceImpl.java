@@ -17,10 +17,11 @@ import br.univille.ativchat.service.BrokerMensagemService;
 public class BrokerMensagemServiceImpl implements BrokerMensagemService {
     String topicName = "topic-chat";
     String serviceBus = "sb-das12025-test-brazilsouth.servicebus.windows.net";
-    String subscription = "subscription-" + System.getenv("tucod");
+    String subscription = "subscription-" + System.getenv("artur");
 
     DefaultAzureCredential credential = new DefaultAzureCredentialBuilder().build();
 
+    //recebe
     ServiceBusProcessorClient processorClient = new ServiceBusClientBuilder().fullyQualifiedNamespace(serviceBus)
             .credential(credential).transportType(AmqpTransportType.AMQP_WEB_SOCKETS).processor().topicName(topicName)
             .subscriptionName(subscription).receiveMode(ServiceBusReceiveMode.PEEK_LOCK).processMessage(context -> {
@@ -30,19 +31,22 @@ public class BrokerMensagemServiceImpl implements BrokerMensagemService {
                 System.out.println("Erro: " + context.getException().getMessage());
             }).buildProcessorClient();
 
+
+    //envia
     ServiceBusSenderClient senderClient = new ServiceBusClientBuilder()
             .fullyQualifiedNamespace("sb-das12025-test-brazilsouth.servicebus.windows.net").credential(credential)
             .transportType(AmqpTransportType.AMQP_WEB_SOCKETS).sender().topicName(topicName).buildClient();
 
     @Override
     public void enviarMensagem(Mensagem mensagem) {
-        senderClient.sendMessage(new ServiceBusMessage(mensagem));
+        senderClient.sendMessage(new ServiceBusMessage(mensagem.nome() + ": " + mensagem.texto()));
         System.out.println(mensagem);
     }
 
+
+    
     @Override
     public void buscarMensagens(List<Mensagem> mensagens) {
-        processorClient.start();
         System.out.println("Aguardando");
         mensagens.stream().forEach(m -> System.out.println(m));
     }
