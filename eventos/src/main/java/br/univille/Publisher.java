@@ -9,14 +9,14 @@ import com.azure.messaging.servicebus.ServiceBusSenderClient;
 
 public class Publisher {
     public static void main(String[] args) {
-        String topicName = "topic-das1";
+        String topicName = "topic-chat";
         DefaultAzureCredential credential = new DefaultAzureCredentialBuilder().build();
 
         ServiceBusSenderClient senderClient = new ServiceBusClientBuilder()
                 .fullyQualifiedNamespace("sb-das12025-test-brazilsouth.servicebus.windows.net").credential(credential)
                 .transportType(AmqpTransportType.AMQP_WEB_SOCKETS).sender().topicName(topicName).buildClient();
 
-        senderClient.sendMessage(new ServiceBusMessage("eita porra"));
+        senderClient.sendMessage(new ServiceBusMessage("eita: porra"));
 
     }
 }

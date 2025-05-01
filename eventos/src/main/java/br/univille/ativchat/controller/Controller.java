@@ -18,6 +18,12 @@ public class Controller implements ActionListener {
 
     public Controller(Form form) {
         this.form = form;
+        Injector injector = Guice.createInjector(new AppModule());
+        this.service = injector.getInstance(BrokerMensagemService.class);
+
+        service.buscarMensagens(mensagem -> {
+            form.setMensagem(mensagem.nome() + ": " + mensagem.texto());
+        });
     }
 
     @Override
