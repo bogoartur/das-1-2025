@@ -8,12 +8,24 @@
     <artifactId>MultiProjectDAS20251</artifactId>
     <version>1.0-SNAPSHOT</version>
 <properties>
-    <maven.controller.source>21</maven.controller.source>
-    <maven.controller.target>21</maven.controller.target>
+    <maven.controller.source>17</maven.controller.source>
+    <maven.controller.target>17</maven.controller.target>
 </properties>
     <dependencies>
         <dependency>
             eventos
+        </dependency>
+        <dependency>
+            pipeline
+        </dependency>
+        <dependency>
+            microkernel-interface
+        </dependency>
+        <dependency>
+            microkernel-plugin
+        </dependency>
+        <dependency>
+            microkernel-kernel
         </dependency>
     </dependencies>
 
