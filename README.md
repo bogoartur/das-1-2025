@@ -55,3 +55,10 @@
    - Ele faz todas as decisões importantes sobre como o projeto será feito, as tecnologias que serão utilizadas e a estrutura dele para garantir a integridade conceitual do projeto, garantir que tudo faça sentido junto.
 - Qual o comportamento do arquiteto ideal?
    - Ele trabalha juntamente com a equipe para entender as entranhas do projeto e orientá-los da melhor maneira, participando da programação, entrando em uma reunião com o time de requisitos, para ter certeza que tudo vai ficar nos trilhos
+ 
+ ## Aula 28/05/25
+ - [Arquitetura Baseada em Serviços](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/46[%3Bvnd.vst.idref%3Dcap13.xhtml]!/4/2/2/1:0[%2CCAP])
+ - Flexível, mais simples e barata
+ - Normalmente os serviços compartilham um banco de dados único
+ - A maior simplicidade pode não ser ideal em alguns casos comparando com microsserviços, como casos envolvendo pagamentos.
+ - Alterações no banco de dados devem ser cuidadosas pois podem impactar o serviço inteiro
