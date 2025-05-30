@@ -62,3 +62,14 @@
  - Normalmente os serviços compartilham um banco de dados único
  - A maior simplicidade pode não ser ideal em alguns casos comparando com microsserviços, como casos envolvendo pagamentos.
  - Alterações no banco de dados devem ser cuidadosas pois podem impactar o serviço inteiro
+ - Não é a melhor arquitetura em nenhum ponto, mas é excelente em vários (confiabilidade, tolerância a falhas, custo, testabilidade, modularidade...)
+
+## Aula 29/05/25
+- [Arquitetura Baseada em Microsserviços](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/54%5B%3Bvnd.vst.idref%3Dcap17.xhtml%5D!/4)
+- Bancos de dados separados
+- Performance pode ser pior
+- Escalável
+- Cada microsserviço cuida de algo específico, ajuda na manutenção
+- Sincronizar ações que precisam acontecer juntar é + dificil
+- Cada parte pode usar serviços diferentes para a funções similares caso encaixe melhor
+- Quem trabalha em um não precisa se preocupar com o funcionamento do outro no geral
